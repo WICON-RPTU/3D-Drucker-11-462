@@ -1,0 +1,53 @@
+# 3D-Printer-11-462
+
+## Setup
+
+### Installing OrcaSlicer
+To start 3D printing, you’ll need OrcaSlicer. This software helps you prepare your 3D models for printing. You can download OrcaSlicer here:  
+https://orca-slicer.com/
+
+### Printer and Filament Profiles
+Printer and filament profiles are essential for achieving optimal print quality. You can import these profiles in OrcaSlicer via “File” → “Import” → “Import Config.” Here you can import both printer and filament profiles tailored specifically to your printer and the filament you’re using. The printer profile and matching filament profiles are included as a single `.orca` file at the beginning of this repository.
+
+## Preparation
+
+### Slicing
+To prepare a 3D object for printing, you first need to “slice” it. Open OrcaSlicer and load the desired 3D model (STL file) into the program. Select the appropriate printer and filament profile. Adjust all print parameters according to the intended use of the part. Once all settings are configured, click “Slice” and save the resulting G-code file.
+
+#### 📝 Layer Height
+Layer height determines how thick each printed layer will be. Smaller values (e.g. 0.1 mm) deliver finer detail, while larger values (e.g. 0.3 mm) speed up the print. A good balance for quality and print time is typically 0.2 mm.
+
+#### 📝 Wall Line Count
+This setting specifies how many lines make up the outer wall of a model. More wall lines improve strength and surface quality. For most prints, 2–3 lines are a solid starting point.
+
+#### 📝 Infill Density
+Infill density controls how much of the model’s interior is filled, indicated in percent. Higher values make parts stronger and heavier, while lower values save time and material. Common ranges are 10% for decorative prints and up to 30% for mechanically stressed parts.
+
+#### 📝 Top/Bottom Layers
+This parameter defines how many solid layers are printed at the top and bottom of the model. Too few layers can lead to holes or rough surfaces, especially with low infill. For clean results, 3–6 layers (at 0.2 mm layer height) are recommended.
+
+### Printer Check
+Before starting a print, you should check the following to ensure smooth operation:
+
+- **Is the correct filament loaded?** (If not, the extruder temperature can be set manually via the display. Once the temperature is reached, you can unload the old filament and insert the new one.)
+- **Is the print bed clean?**
+- **Is the print area clear of obstacles?**
+- **Is the printer powered on and ready?**
+- **Are filament spools properly loaded, with enough material remaining?**
+- **Are the print parameters correctly configured?**
+
+This checklist ensures that nothing is overlooked before you start printing.
+
+## Printing
+
+### Important Notes
+- Prints should ideally not exceed 4 hours to guarantee daily printer availability. If you need to run a longer print, please contact **Feldmann@rptu.de**
+- For any other issues, please also reach out to **Feldmann@rptu.de**
+
+### Operating the Printer and Uploading Files
+After slicing, you can begin printing. The **Mainsail** and **Klipper** interfaces are intuitive and allow easy printer control. On the **Mainsail Dashboard**, you’ll find options like “Start Print,” “Set Temperature,” and “Upload G-Code.”
+
+To upload the file directly from OrcaSlicer to the printer after slicing, simply click “Print Current Plate” and choose between "Upload" and "Print and Upload" — the latter will immediately start the print. Alternatively, you can upload the G-code file manually through the Mainsail web interface and start the print from there.  
+If the printer is not reachable, the IP address may have changed. You can check the current IP address on the printer’s touchscreen under the network settings. To update the IP in Mainsail, click the Wi-Fi icon next to the selected printer and enter the new IP.
+
+If you want to repeat a print, you don’t need to re-slice it. You can simply start the print again directly via the printer touchscreen under “Print.”
