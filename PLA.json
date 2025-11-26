@@ -1,0 +1,16 @@
+{
+    "filament_settings_id": [
+        "PLA"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "50"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "50"
+    ],
+    "inherits": "My Generic PLA",
+    "is_custom_defined": "0",
+    "name": "PLA",
+    "version": "2.2.0.4"
+}

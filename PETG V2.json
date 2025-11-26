@@ -1,0 +1,22 @@
+{
+    "filament_settings_id": [
+        "PETG V2"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "70"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "70"
+    ],
+    "inherits": "My Generic PETG",
+    "is_custom_defined": "0",
+    "name": "PETG V2",
+    "nozzle_temperature": [
+        "242"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "242"
+    ],
+    "version": "2.2.0.4"
+}
